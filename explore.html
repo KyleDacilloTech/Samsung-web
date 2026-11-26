@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galaxy AI | Galaxy Store</title>
+<meta name="description" content="Translate, search, edit and summarise with Galaxy AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<script defer src="js/data.js"></script>
+<script defer src="js/shell.js"></script>
+<script defer src="js/main.js"></script>
+<script defer src="js/explore.js"></script>
+</head>
+<body data-page="explore">
+<main id="main">
+
+<section class="xhero">
+ <div class="ph"><img src="images/explore/ai-hero.jpg" alt="" fetchpriority="high"></div>
+ <div class="wrap">
+  <p class="kick">Galaxy AI</p>
+  <h1>AI that works the way you do.</h1>
+  <p>Translate, search, edit and summarise without leaving the app you’re in.</p>
+  <a class="btn light" href="#features">See what it can do</a>
+ </div>
+</section>
+
+<section class="sec wrap" id="features">
+ <h2 class="h2">Four ways Galaxy AI helps</h2>
+ <div class="tabs" role="tablist" aria-label="Galaxy AI features">
+  <button role="tab" id="t0" aria-controls="p0" aria-selected="true">Live Translate</button>
+  <button role="tab" id="t1" aria-controls="p1" aria-selected="false">Circle to Search</button>
+  <button role="tab" id="t2" aria-controls="p2" aria-selected="false">Photo Assist</button>
+  <button role="tab" id="t3" aria-controls="p3" aria-selected="false">Note Assist</button>
+ </div>
+ <div class="tp" role="tabpanel" id="p0" aria-labelledby="t0"><div class="ph"><img src="images/explore/translate.jpg" alt="" loading="lazy"></div><div><h3>Talk across languages</h3><p>Make calls and chat in different languages. Translation happens on your device, so conversations stay private.</p></div></div>
+ <div class="tp" role="tabpanel" id="p1" aria-labelledby="t1" hidden><div class="ph"><img src="images/explore/search.jpg" alt="" loading="lazy"></div><div><h3>Search what you see</h3><p>Circle, highlight or tap anything on screen to get answers without switching apps.</p></div></div>
+ <div class="tp" role="tabpanel" id="p2" aria-labelledby="t2" hidden><div class="ph"><img src="images/explore/photo.jpg" alt="" loading="lazy"></div><div><h3>Edit with a tap</h3><p>Remove distractions, straighten a shot or fill in the background in seconds.</p></div></div>
+ <div class="tp" role="tabpanel" id="p3" aria-labelledby="t3" hidden><div class="ph"><img src="images/explore/notes.jpg" alt="" loading="lazy"></div><div><h3>Notes that summarise themselves</h3><p>Turn long notes and voice recordings into clean summaries and checklists.</p></div></div>
+</section>
+
+<section class="sec wrap" style="padding-top:0">
+ <h2 class="h2">See the difference</h2>
+ <p class="mut" style="margin:8px 0 28px">Drag the handle, or use the arrow keys, to compare the original with the edit.</p>
+ <div class="cmp" id="cmp" style="--p:50%">
+  <div class="ph a"><img src="images/explore/before.jpg" alt="Original photo" loading="lazy"><span>Original</span></div>
+  <div class="ph b"><img src="images/explore/after.jpg" alt="Edited photo" loading="lazy"><span>Edited</span></div>
+  <i class="hd" aria-hidden="true"></i>
+  <input type="range" min="0" max="100" value="50" aria-label="Comparison position">
+ </div>
+</section>
+
+<section class="sec wrap" style="padding-top:0">
+ <h2 class="h2">Built into everything</h2>
+ <ul class="fg">
+  <li class="rv"><h3>Browsing Assist</h3><p>Summarise long web pages in a tap.</p></li>
+  <li class="rv"><h3>Chat Assist</h3><p>Adjust the tone of a message before you send it.</p></li>
+  <li class="rv"><h3>Interpreter</h3><p>Face-to-face conversations, translated as you talk.</p></li>
+  <li class="rv"><h3>Transcript Assist</h3><p>Turn recordings into text with speaker labels.</p></li>
+  <li class="rv"><h3>Generative Edit</h3><p>Move, resize or remove objects in a photo.</p></li>
+  <li class="rv"><h3>Smart Select</h3><p>Pull text, links and images out of anything on screen.</p></li>
+ </ul>
+</section>
+
+<section class="feat"><div class="wrap grid">
+ <div class="rv"><h2 class="h2">Ready to try Galaxy AI?</h2><p class="lead">Available on the newest Galaxy phones, tablets and watches.</p><a class="btn light" href="shop.html?c=phones">Shop Galaxy phones</a></div>
+</div></section>
+
+</main>
+</body>
+</html>

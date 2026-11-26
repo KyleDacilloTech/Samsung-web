@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Galaxy Store | Mobile, TV, Appliances &amp; More</title>
+<meta name="description" content="A responsive storefront inspired by Samsung’s design. A learning project.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+<noscript><style>.rv{opacity:1;transform:none}</style></noscript>
+<script defer src="js/data.js"></script>
+<script defer src="js/shell.js"></script>
+<script defer src="js/main.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="l" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+<symbol id="r" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+<symbol id="s" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+<symbol id="c" viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6zM9 8a3 3 0 0 1 6 0"/></symbol>
+<symbol id="u" viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></symbol>
+<symbol id="pa" viewBox="0 0 24 24"><path d="M9 5v14M15 5v14"/></symbol>
+<symbol id="pl" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7z"/></symbol>
+</svg>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="hdr" id="hdr">
+ <div class="wrap bar">
+  <button class="ico burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+  <a class="logo" href="#top" aria-label="Galaxy Store home">SAMSUNG</a>
+  <nav class="nav" id="nav" aria-label="Primary"><ul id="navList"></ul></nav>
+  <div class="tools">
+   <form class="srch" id="srch" role="search"><input type="search" placeholder="Search products" aria-label="Search products"></form>
+   <button class="ico" id="srchBtn" aria-label="Search" aria-expanded="false"><svg><use href="#s"/></svg></button>
+   <a class="ico cart" href="cart.html" aria-label="Cart"><svg><use href="#c"/></svg><b id="cartN" aria-live="polite">0</b></a>
+  </div>
+ </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top" tabindex="0" aria-roledescription="carousel" aria-label="Featured products">
+ <div class="slides">
+  <article class="slide on" style="--bg:#1b2a6b">
+   <div class="ph"><img src="images/hero/hero-1.jpg" alt="" fetchpriority="high"></div>
+   <div class="wrap copy"><p class="kick">New</p><h1>Galaxy S Ultra</h1><p>Epic AI. Pro-grade camera. Built in titanium.</p><div class="row"><a class="btn light" href="product.html?id=s-ultra">Buy now</a><a class="btn ghost" href="#features">Learn more</a></div></div>
+  </article>
+  <article class="slide" style="--bg:#0e3b43">
+   <div class="ph"><img src="images/hero/hero-2.jpg" alt="" loading="lazy"></div>
+   <div class="wrap copy"><p class="kick">Neo QLED 8K</p><h2>Every pixel, perfected.</h2><p>Quantum Mini LED and AI upscaling turn everything you watch into 8K.</p><div class="row"><a class="btn light" href="shop.html?c=tvs">Shop TVs</a><a class="btn ghost" href="#features">Learn more</a></div></div>
+  </article>
+  <article class="slide" style="--bg:#3a1f4d">
+   <div class="ph"><img src="images/hero/hero-3.jpg" alt="" loading="lazy"></div>
+   <div class="wrap copy"><p class="kick">Galaxy Watch</p><h2>Your health, on your wrist.</h2><p>Track sleep, heart rhythm and energy with insights you can act on.</p><div class="row"><a class="btn light" href="shop.html?c=wearables">Shop wearables</a><a class="btn ghost" href="#features">Learn more</a></div></div>
+  </article>
+ </div>
+ <div class="wrap ctl">
+  <div class="dots" id="dots"></div>
+  <button class="ico" id="pp" aria-label="Pause slideshow"><svg><use href="#pa"/></svg></button>
+  <button class="ico" id="pv" aria-label="Previous slide"><svg><use href="#l"/></svg></button>
+  <button class="ico" id="nx" aria-label="Next slide"><svg><use href="#r"/></svg></button>
+ </div>
+ <div class="prog"><i id="prog"></i></div>
+</section>
+
+<section class="sec wrap"><h2 class="h2">Shop by category</h2><ul class="cats" id="cats"></ul></section>
+
+<section class="sec wrap" id="products">
+ <div class="head"><h2 class="h2">Most loved</h2>
+  <div><button class="ico" id="tp" aria-label="Scroll products left"><svg><use href="#l"/></svg></button><button class="ico" id="tn" aria-label="Scroll products right"><svg><use href="#r"/></svg></button></div></div>
+ <div class="track" id="track" tabindex="0" role="region" aria-label="Products"></div>
+</section>
+
+<section class="sec wrap promos">
+ <a class="promo rv" href="shop.html?c=appliances"><div class="ph"><img src="images/promos/promo-1.jpg" alt="" loading="lazy"></div><div><p class="kick">Bespoke AI</p><h3>Appliances that learn how you live</h3><span>Shop appliances</span></div></a>
+ <a class="promo rv" href="shop.html?c=computing"><div class="ph"><img src="images/promos/promo-2.jpg" alt="" loading="lazy"></div><div><p class="kick">Galaxy Book</p><h3>Thin, light and ready for anything</h3><span>Shop laptops</span></div></a>
+</section>
+
+<section class="feat" id="features"><div class="wrap grid">
+ <div class="rv"><p class="kick">Galaxy AI</p><h2 class="h2">Intelligence that fits in your pocket</h2><p class="lead">Translate calls as they happen, search by circling anything on screen and edit photos with a tap.</p><a class="btn light" href="explore.html">Discover Galaxy AI</a></div>
+ <ul class="stats rv">
+  <li><b data-n="200" data-s="MP">0</b><span>Pro-grade camera</span></li>
+  <li><b data-n="7" data-s=" yrs">0</b><span>Of OS updates</span></li>
+  <li><b data-n="120" data-s="Hz">0</b><span>Adaptive display</span></li>
+ </ul>
+</div></section>
+
+<section class="sec wrap news"><div><h2 class="h2">Get launch news and offers</h2><p>One email a month. Unsubscribe any time.</p></div>
+ <form id="nl"><input type="email" required placeholder="Email address" aria-label="Email address"><button class="btn">Subscribe</button></form>
+</section>
+</main>
+
+<footer class="ftr"><div class="wrap">
+ <div class="cols" id="foot"></div>
+ <p class="legal">© 2026 Galaxy Store demo. A learning project inspired by Samsung’s design; not affiliated with or endorsed by Samsung Electronics.</p>
+</div></footer>
+
+<button class="ico top" id="up" aria-label="Back to top"><svg><use href="#u"/></svg></button>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
